@@ -1,0 +1,27 @@
+[project]
+name = "langgraphcourse"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mazenyasser7575sami",email = "yassersami75@gmail.com"}
+]
+requires-python = ">=3.10,<4.0"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "langchain (>=1.4.6,<2.0.0)",
+    "langchain-openai (>=1.7.2,<2.0.0)",
+    "langchain-ollama (>=1.1.0,<2.0.0)",
+    "langchain-community (>=0.4.2,<0.5.0)",
+    "langgraph-tavily (>=0.1.0,<0.2.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "black (>=26.10.1,<27.0.0)",
+    "isort (>=9.0.2,<10.0.0)"
+]
